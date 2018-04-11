@@ -15,4 +15,8 @@ func init() {
 	crypto.RegisterHash(crypto.SHA3_256, New256)
 	crypto.RegisterHash(crypto.SHA3_384, New384)
 	crypto.RegisterHash(crypto.SHA3_512, New512)
+	crypto.RegisterHash(crypto.Keccak_224, NewKeccak224)
+	crypto.RegisterHash(crypto.Keccak_256, NewKeccak256)
+	crypto.RegisterHash(crypto.Keccak_384, NewKeccak384)
+	crypto.RegisterHash(crypto.Keccak_512, NewKeccak512)
 }
